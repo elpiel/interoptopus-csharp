@@ -1,0 +1,17 @@
+[package]
+name = "basic_csharp"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["unity"]
+
+unity = []
+
+[dependencies]
+interoptopus = "0.14.26"
+interoptopus_backend_csharp = { version = "0.14.25", features = ["unity"] }
+serde_json = "1.0.127"
